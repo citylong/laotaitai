@@ -3,9 +3,12 @@ layout: base
 eleventyNavigation:
   key: Home
 ---
+<div class="container">
+    <h1>A blank 11ty project.</h1>
 
 <ul>
 {%- for posts in collections.posts -%}
   <li>{{ posts.data.title }}</li>
 {%- endfor -%}
 </ul>
+</div>
