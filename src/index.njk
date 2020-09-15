@@ -9,6 +9,7 @@ eleventyNavigation:
 <ul>
 {%- for posts in collections.posts -%}
   <li>{{ posts.data.title }}</li>
+  <li><a href="{{ posts.url }}">{{ posts.url }}</a></li>
 {%- endfor -%}
 </ul>
 </div>
